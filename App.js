@@ -1,26 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
+import 'intl';
+import 'intl/locale-data/jsonp/pt-PT';
+
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import Routes from './src/routes';
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello My world</Text>
-      <StatusBar style="auto" />
-    </View>
+      //<StatusBar style="auto" />
+      <Routes/>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#ffc01c',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: '#fff',
-    fontSize: 20,
-    fontWeight: "bold",
-  }
-});
